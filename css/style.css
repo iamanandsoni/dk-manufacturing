@@ -1,0 +1,457 @@
+:root {
+    --blue: #1b2e5a;
+    --yellow: #fcb215;
+    --brown: #c13a22; 
+}
+
+html,
+body, a, p, * {
+	margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #212121;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+
+.light-bg{
+    background-color: #f4f4f4;
+}
+
+
+/* All Pages Top Title Css Start  */
+
+.informative-title h3{
+    font-size: 22px;
+    margin: 0px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--yellow);
+}
+
+/* All Pages Top Title Css End  */
+
+
+/* Header Css Start */
+.top-header{
+    background-color: var(--yellow);
+    padding: 10px 0px;
+}
+
+.top-header .offer span{
+    background-color: var(--brown);
+    color: white;
+    padding: 0px 5px;
+}
+
+.top-header .infor ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-header .infor ul li{
+    display: inline-block;
+    margin: 0px 5px;
+    text-align: right;
+}
+
+.top-header .infor ul li i{
+    margin-right: 10px;
+}
+
+#header .main-logo img {
+    display: inline-block;
+    padding: 15px 0px;
+    width: 140px;
+}
+
+#header .search-form form input[type=search] {
+    height: 45px;
+    box-sizing: border-box;
+}
+
+#header .search-form button {
+    height: 47px;
+    width: 120px;
+    color: #fff;
+    background-color: var(--blue);
+    border: none;
+    transition: ease-in-out 0.2s; 
+}
+
+#header .search-form button:hover {
+    color: #111;
+    background-color: var(--yellow);
+}
+
+#header .navbar{
+    padding: 10px 0px;
+}
+
+@media screen and (max-width: 991px){
+    #header .navbar-collapse{
+        padding: 10px 20px;
+        background-color: #f4f4f4;
+        border-right: 2px solid var(--yellow);
+        border-left: 2px solid var(--yellow);
+    }
+
+    #header nav a {
+        border-bottom: 1px solid var(--yellow);
+    }
+} 
+
+#header nav a {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+    padding: 8px 20px;
+}
+
+#header nav a:hover, #header nav li.active {
+    color: #111;
+    font-weight: 500;
+    background-color: var(--yellow);
+}
+
+/* Header Css End  */
+
+/* Slider Css Start  */
+#slider .carousel-caption {
+    top: 40%;
+    left: 15%;
+    text-align: left;
+    animation-name: example;
+    animation-duration: 1.2s;
+}
+  
+  @keyframes example {
+    0%   {left:-200%; top:40%;}
+    100% {left:15%; top:40%;}
+  }
+
+#slider .carousel-caption h3 { 
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--blue);
+    display: table;
+    border-bottom: 5px solid var(--yellow);
+    font-weight: 600;
+}
+
+#slider .carousel-caption p { 
+    font-size: 16px; 
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    display: table;
+    color: #fff;
+}
+/* Slider Css End  */
+
+/* Key Feature Css Start  */
+.key-feature i{
+    color: var(--yellow);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.key-feature h5{
+    color: var(--yellow);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.key-feature p{
+    color: #111;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+/* Key Feature Css End  */
+
+/********* Product Listing Css Start  *********/
+.product-listing .card{
+    max-height: 380px;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.product-listing .card a:hover {
+    text-decoration: none; 
+}
+
+.product-listing .card:hover {
+    box-shadow: 2px 2px 5px #cecece; 
+}
+
+.product-listing-image {
+    max-height: 200px;
+    overflow: hidden; 
+}
+
+.product-listing-image img{
+    background-size: contain;
+    min-height: 200px;
+    transition: ease-in-out 0.2s; 
+}
+
+.product-listing .card:hover img{
+    transform: scale(1.1);
+}
+
+.product-listing .card-body h5{
+    font-size: 18px;
+    color: var(--yellow);
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-listing .card-body .product-discount{
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    background-color: var(--red);
+    font-weight: 500;
+}
+
+.product-listing .card-body .product-text{
+    min-height: 65px;
+    max-height: 65px;
+    margin: 5px 0px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #666;
+}
+
+.product-listing .card-body .product-info{
+    color: var(--red);
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+/********* Product Listing Css End  *********/
+
+
+/*********  About Us Css Start  *********/
+.about-us h4{
+    font-size: 20px;
+}
+
+.about-us p{
+    font-size: 14px;
+}
+
+.best-product img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/*********  About Us Css End  *********/
+
+
+/********* Search Result/Product Listing Css End  *********/
+.filter-form form label{
+    font-weight: 500;
+}
+
+.filter-form form .checkbox-font{
+    font-weight: normal;
+    font-size: 13px;
+}
+/********* Search Result/Product Listing Css End  *********/
+
+
+/********* Product Deatil Css Start  *********/
+
+/**** Gallery Css Start  ****/
+/* Four equal columns for gallery */
+.gallery-column {
+    padding: 15px 5px;
+    width: 25%;
+}
+/* Thumbnail images style inside the grid for gallery  */
+.gallery-column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    height: 90px;
+    border: 1px solid var(--yellow);
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.gallery-column img:hover {
+    opacity: 1;
+}
+/* The expanding image container for gallery */
+.gallery-container {
+    position: relative;
+    display: none;
+}
+/**** Gallery Css End  ****/
+
+.product-detail .product-d-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--yellow);
+}
+
+.product-detail .product-d-price{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-detail .product-d-price span{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: line-through;
+    font-style: italic;
+    color: var(--red);
+}
+
+.product-detail .product-d-discount{
+    font-size: 18px;
+    background-color: var(--yellow);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.product-detail .product-d-text{
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0px 0px 0px;
+    text-align: justify;
+}
+
+.product-detail .product-d-buy{
+    font-size: 14px;
+    color: #333;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid var(--yellow);
+    padding: 10px 0px;
+    margin: 30px 0px 10px 0px;
+    transition: ease-in-out 0.3s;
+}
+
+.product-detail .product-d-buy:hover{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--yellow);
+    box-shadow: 2px 2px 5px #cecece;
+}
+/********* Product Deatil Css End  *********/
+
+
+/*********  Contact Us Css Start  *********/
+.contact-us h4{
+    font-size: 20px;
+}
+
+.contact-us p{
+    font-size: 14px;
+}
+
+.contact-us i{
+    color: var(--yellow);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-us h5{
+    color: var(--yellow);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-us p{
+    color: #111;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+/*********  Contact Us Css End  *********/
+
+
+/********* Footer Css Start  *********/
+.footer-area {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.footer-area h5{
+    color: var(--yellow);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-area li::before {
+    font-family: FontAwesome;
+    content: '\f101';
+    margin-right: 10px;
+    color: #fff;
+}
+
+.footer-area i{
+    color: #fff;
+    font-size: 14px;
+    width: 20px;
+}
+
+.footer-area li a{
+    color: #fff;
+    font-size: 14px;
+    transition: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -moz-transition: ease 0.4s;
+}
+
+.footer-area li a:hover{
+    padding-left: 5px;
+}
+/********* Footer Css End  *********/
+
+
+/********* Whatsapp CTA Css Start  *********/
+.whatsapp-cta{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+.whatsapp-cta a{
+    background-color: #67df83;
+    padding: 15px;
+    height: 60px;
+    width: 60px;
+    display: block;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1), 0 2px 32px 0 rgba(0,0,0,0.3);
+}
+
+.whatsapp-cta a i{
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 2px;
+}
+/********* Whatsapp CTA Start  *********/

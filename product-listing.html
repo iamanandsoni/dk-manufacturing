@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, Title+Des, Favicon, Css, Font, JS etc... -->
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dk ManuFacturing | Design and Kwality Furniture</title>
+    <meta name="description" content="Dk ManuFacturing | Design and Kwality Furniture. Here you can buy any kind of furniture you want"/>
+
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+
+    <!-- Header Start from here -->
+    <header id="header">
+        <div class="top-header d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 offer">
+                        <p><span>New Year Sale!</span> Enjoy Up To 55% off! Use Code <span>"WELCOME21"</span> To Get Extra 20% off.</p>
+                    </div>
+                    <div class="col-md-5 infor">
+                        <ul class="d-flex flex-row-reverse">
+                            <li><a href="tel:+91-9876543210"><i class="fa fa-phone"></i>+91-9876543210</a></li>
+                            <li><a href="mailto:abcdef@DkManuFacturing.com"><i class="fa fa-envelope-o"></i>abcdef@dkmanufacturing.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <a class="main-logo" href="index.html"><img src="images/logo.png"></a>    
+                </div>
+                <div class="col-md-7 d-flex flex-row-reverse search-form">
+                    <form class="input-group my-2 my-lg-0 align-items-center">
+                        <input class="form-control" type="search" placeholder="Search Product Here..." aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-warning" type="submit">Search</button>
+                        </div>
+                    </form>
+
+                </div>
+                
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light border-top d-flex flex-row-reverse">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-listing.html">Product Listing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-detail.html">Product Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Informative Title start from here -->
+    <section class="light-bg">
+        <div class="container">
+            <div class="row py-5 px-4 informative-title">
+                <h3>Product Listing</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Informative Title end -->
+
+    <!-- Product listing cards Start from here -->
+    <section class="product-listing">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-3 mb-4">
+                    <div class="filter-form">
+                        <h6 class="text-danger">FILTERS</h6>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label for="SortSearch">Sort By</label>
+                                <select class="form-control" id="SortSearch">
+                                    <option selected>Recommended</option>
+                                    <option>Price : Low to High</option>
+                                    <option>Price : High to Low</option>
+                                    <option>New Arrivals</option>
+                                    <option>Discount</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="PriceSearch">Price</label>
+                                <select class="form-control" id="PriceSearch">
+                                    <option selected>Choose Price</option>
+                                    <option>Rs. 500 - 4999</option>
+                                    <option>Rs. 5000 - 9999</option>
+                                    <option>Rs. 10000 - 14999</option>
+                                    <option>Rs. 15000 - 19999</option>
+                                    <option>Rs. 20000 - 24999</option>
+                                    <option>Rs. 25000+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="FeaturesSearch">Features</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="FeaturesCheck1">
+                                    <label class="form-check-label checkbox-font" for="FeaturesCheck1">Feature 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="FeaturesCheck2">
+                                    <label class="form-check-label checkbox-font" for="FeaturesCheck2">Feature 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="FeaturesCheck3">
+                                    <label class="form-check-label checkbox-font" for="FeaturesCheck3">Feature 3</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ColorModeSearch">Color Mode</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ColorCheck1">
+                                    <label class="form-check-label checkbox-font" for="ColorCheck1">Dark Color</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ColorCheck2">
+                                    <label class="form-check-label checkbox-font" for="ColorCheck2">Medium Color</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ColorCheck3">
+                                    <label class="form-check-label checkbox-font" for="ColorCheck3">Light Color</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row mb-3">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-2.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 1</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-3.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 2</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-4.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 3</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-2.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 4</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-3.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 5</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-4.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 6</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-2.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 7</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-3.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 8</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <a href="product-detail.html">
+                                    <div class="product-listing-image">
+                                        <img src="images/product-4.jpg" class="card-img-top" alt="" title="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="product-title">Product 9</h5>
+                                        <p class="product-price"><b>Rs. 12000</b> <i><strike>15000</strike></i><span class="product-discount">30% Off</span></p>
+                                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                        <p class="product-info">>> View Details</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item"><a class="page-link" href="">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="">1</a></li>
+                            <li class="page-item"><a class="page-link" href="">2</a></li>
+                            <li class="page-item"><a class="page-link" href="">3</a></li>
+                            <li class="page-item"><a class="page-link" href="">Next</a></li>
+                        </ul>
+                    </nav>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product listing end -->
+    <!-- Footer Start from here -->
+    <footer class="">
+        <div id="" class="footer-area py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 px-5">
+                      <h5>Quick Links</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product Listing</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 px-5">
+                      <h5>Categories</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a href="#">Sofa</a></li>
+                        <li><a href="#">Bed</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Chair</a></li>
+                        <li><a href="#">Cupboard</a></li>
+                        <li><a href="#">Storage</a></li>
+                        <li><a href="#">Study</a></li>
+                        <li><a href="#">Decor</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 px-5">
+                      <h5>Social Links</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 px-5">
+                      <h5>Contact Links</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a href="#">T & C</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Whatsapp call to action -->    
+    <div class="whatsapp-cta">
+        <a class="" data-phone="919876543210" data-message="Hi I am looking for A Furniture." href="https://web.whatsapp.com/send?phone=919876543210&amp;text=Hi I am looking for A Furniture." target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+</body>
+</html>

@@ -262,11 +262,68 @@ body, a, p, * {
 .filter-form form label{
     font-weight: 500;
 }
-
+/*
 .filter-form form .checkbox-font{
     font-weight: normal;
     font-size: 13px;
-}
+}*/
+.selfcheck { 
+    display: block; 
+    position: relative; 
+    padding-left: 35px; 
+    margin-bottom: 08px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    font-weight: 400 !important;
+    font-size: 13px;
+} 
+/* Hide the default checkbox */ 
+.selfcheck input[type=checkbox] { 
+    visibility: hidden; 
+} 
+/* Creating a custom checkbox based on demand */ 
+.selfcheckbox { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 20px; 
+    width: 20px; 
+    background-color: #e1e2e3; 
+    border-radius: 5px; 
+    margin-left: 10px;
+} 
+/* Specify the background color to be shown when hovering over checkbox */ 
+.selfcheck:hover input ~ .selfcheckbox { 
+    background-color: #fcb215; 
+} 
+/* Specify the background color to be shown when checkbox is checked */ 
+.selfcheck input:checked ~ .selfcheckbox { 
+    background-color: #fcb215; 
+} 
+/* Checkmark to be shown in checkbox */ 
+/* It is not be shown when not checked */ 
+.selfcheckbox:after { 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+} 
+/* Display checkmark when checked */ 
+.selfcheck input:checked ~ .selfcheckbox:after { 
+    display: block; 
+} 
+/* Styling the checkmark using webkit */ 
+/* Rotated the rectangle by 45 degree and showing only two border to make it look like a tickmark */ 
+.selfcheck .selfcheckbox:after { 
+    left: 7px; 
+    bottom: 5px; 
+    width: 6px; 
+    height: 12px; 
+    border: solid #fff; 
+    border-width: 0 3px 3px 0; 
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+} 
 /********* Search Result/Product Listing Css End  *********/
 
 

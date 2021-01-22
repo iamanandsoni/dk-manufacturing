@@ -162,6 +162,22 @@ a:hover {
 }
 /* Slider Css End  */
 
+/* Hot Selling Products Css Start */
+.hot-products .hot-products-part{
+    transition: ease-in-out .3s; 
+}
+.hot-products a:hover .hot-products-part{
+    transform: scale(1.2);
+}
+.hot-products a:hover .hot-products-part img{
+    transform: rotate(360deg);
+    transition: ease-in-out .3s; 
+}
+.hot-products a:hover .hot-products-part h5{
+    color: var(--red);
+}
+/* Hot Selling Products Css End */
+
 /* Key Feature Css Start  */
 .key-feature i{
     color: var(--yellow);

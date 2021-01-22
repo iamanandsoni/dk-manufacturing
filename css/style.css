@@ -17,6 +17,10 @@ body, a, p, * {
     font-size: 14px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .light-bg{
     background-color: #f4f4f4;
 }
@@ -98,9 +102,14 @@ body, a, p, * {
         border-right: 2px solid var(--yellow);
         border-left: 2px solid var(--yellow);
     }
-
     #header nav a {
         border-bottom: 1px solid var(--yellow);
+    }
+} 
+
+@media screen and (min-width: 992px){
+    #header nav li {
+    margin-right: 8px;
     }
 } 
 
@@ -110,7 +119,6 @@ body, a, p, * {
     font-weight: 500;
     text-align: right;
     padding: 8px 20px;
-    margin-right: 5px;
 }
 
 #header nav a:hover, #header nav li.active {
@@ -187,7 +195,7 @@ body, a, p, * {
 }
 
 .product-listing .card:hover {
-    box-shadow: 2px 2px 5px #cecece; 
+    box-shadow: 6px 7px 10px #cecece; 
 }
 
 .product-listing-image {
@@ -353,35 +361,43 @@ body, a, p, * {
 /* The expanding image container for gallery */
 .gallery-container {
     position: relative;
-    display: none;
+    display: block;
+    max-height: 400px;
+    overflow: hidden;
+}
+.gallery-container img{
+    min-height: 100%;
+    transition: ease-in-out 1s;
+}
+.gallery-container img:hover{
+    transform: scale(1.3);
 }
 /**** Gallery Css End  ****/
 
 .product-detail .product-d-title{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--yellow);
 }
 
 .product-detail .product-d-price{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
-.product-detail .product-d-price span{
-    font-size: 20px;
+.product-detail .product-d-strike{
+    font-size: 18px;
     font-weight: 500;
     text-decoration: line-through;
     font-style: italic;
-    color: var(--red);
 }
 
 .product-detail .product-d-discount{
-    font-size: 18px;
-    background-color: var(--yellow);
+    font-size: 16px;
+    background-color: var(--red);
     color: #fff;
-    padding: 5px 10px;
-    margin: 10px 0px;
+    padding: 2px 10px;
+    margin: 0px 0px 0px 10px;
     display: inline-block;
     font-weight: 500;
 }
@@ -395,12 +411,12 @@ body, a, p, * {
 
 .product-detail .product-d-buy{
     font-size: 14px;
-    color: #333;
+    color: #fff;
     width: 50%;
     text-align: center;
     font-weight: 600;
     display: inline-block;
-    border: 2px solid var(--yellow);
+    background-color: var(--yellow);
     padding: 10px 0px;
     margin: 30px 0px 10px 0px;
     transition: ease-in-out 0.3s;
@@ -410,8 +426,12 @@ body, a, p, * {
     text-decoration: none;
     font-size: 14px;
     color: #fff;
-    background-color: var(--yellow);
-    box-shadow: 2px 2px 5px #cecece;
+    background-color: var(--blue);
+    box-shadow: 5px 5px 8px #cecece;
+}
+
+.product-detail table tr td{
+    font-weight: 500;
 }
 /********* Product Deatil Css End  *********/
 

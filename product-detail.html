@@ -101,6 +101,9 @@
         <div class="container">
             <div class="row my-5">
                 <div class="col-md-6 mb-5">
+                    <div class="gallery-container">
+                        <img id="expandedImg" class="img-thumbnail w-100">
+                    </div>
                     <div class="row px-2">
                         <div class="col-xs-3 gallery-column">
                             <img src="images/product-1.jpg" alt="" onload="myFunction(this)" onclick="myFunction(this);">
@@ -115,15 +118,11 @@
                             <img src="images/product-4.jpg" alt="" onclick="myFunction(this);">
                         </div>
                     </div>
-                    <div class="gallery-container">
-                        <img id="expandedImg" class="img-thumbnail w-100">
-                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="py-3">
                         <h3 class="product-d-title">Product Title Will Show Here</h3>
-                        <p class="product-d-price">Rs. 12000 <span>15000</span></p>
-                        <p class="product-d-discount">Discount : 30%</p>
+                        <p class="product-d-price">Rs. 12000 <span class="product-d-strike">15000</span> <span class="product-d-discount">Discount : 30%</span></p>
                         <p class="product-d-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
                         <a href="" data-toggle="modal" data-target="#myModal" class="product-d-buy">BUY NOW</a>
                     </div>

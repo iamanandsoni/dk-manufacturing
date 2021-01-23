@@ -71,14 +71,43 @@ a:hover {
     padding: 15px 0px;
     width: 140px;
 }
-
+#header .logo-tagline h2{
+    font-size: 32px; 
+    line-height: 35px;
+    font-weight: bold;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--yellow);
+    animation: tagline-an 2s linear infinite;
+}
+    @keyframes tagline-an {
+        0% {-webkit-text-fill-color: var(--blue);}
+        25% {-webkit-text-fill-color: white;}
+        50% {-webkit-text-fill-color: var(--blue);}
+        75% {-webkit-text-fill-color: white;}
+        100% {-webkit-text-fill-color: var(--blue);}
+    }
+@media screen and (max-width: 667px){
+    #header .logo-tagline h2{
+    font-size: 22px;
+    margin: 0px 15px; 
+    line-height: 25px;
+}
+}
+#header .search-form {
+    margin-top: 6px;
+}
 #header .search-form form input[type=search] {
     height: 45px;
     box-sizing: border-box;
 }
 
 #header .search-form button {
-    height: 47px;
+    height: 45px;
     width: 120px;
     color: #fff;
     background-color: var(--blue);
@@ -118,7 +147,7 @@ a:hover {
     font-size: 14px;
     font-weight: 500;
     text-align: right;
-    padding: 8px 20px;
+    padding: 8px 17px;
 }
 
 #header nav a:hover, #header nav li.active {
@@ -166,41 +195,48 @@ a:hover {
 .hot-products .hot-products-part{
     transition: ease-in-out .3s; 
 }
-.hot-products a:hover .hot-products-part{
+.hot-products a:hover .hot-products-part {
     transform: scale(1.2);
-}
-.hot-products a:hover .hot-products-part img{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 .hot-products a:hover .hot-products-part h5{
     color: var(--red);
 }
 .hot-products .hot-products-part .hot-products-icon{
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     margin-bottom: 20px;
     position: relative;
 }
+.hot-products .hot-products-part .hot-products-icon img{
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 .hot-products .hot-products-part .blue{
-    background-color: #448AFF;
+    border: 2px solid #448AFF;
+    background-color: #ffffff;
 }
 .hot-products .hot-products-part .green{
-    background-color: #8BC34A;
+    border: 2px solid #8BC34A;
+    background-color: #ffffff;
 }
 .hot-products .hot-products-part .yellow{
-    background-color: #FFC107;
+    border: 2px solid #FFC107;
+    background-color: #ffffff;
 }
 .hot-products .hot-products-part .pink{
-    background-color: #FF4081;
+    border: 2px solid #FF4081;
+    background-color: #ffffff;
 }
 .hot-products .hot-products-part .grey{
-    background-color: #607D8B;
+    border: 2px solid #607D8B;
+    background-color: #ffffff;
 }
 .hot-products .hot-products-part .orange{
-    background-color: #FF5722;
+    border: 2px solid #FF5722;
+    background-color: #ffffff;
 }
 .hot-products .hot-products-part .hot-products-icon img{
     position: absolute;

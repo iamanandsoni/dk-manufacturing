@@ -170,11 +170,43 @@ a:hover {
     transform: scale(1.2);
 }
 .hot-products a:hover .hot-products-part img{
-    transform: rotate(360deg);
-    transition: ease-in-out .3s; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .hot-products a:hover .hot-products-part h5{
     color: var(--red);
+}
+.hot-products .hot-products-part .hot-products-icon{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.hot-products .hot-products-part .blue{
+    background-color: #448AFF;
+}
+.hot-products .hot-products-part .green{
+    background-color: #8BC34A;
+}
+.hot-products .hot-products-part .yellow{
+    background-color: #FFC107;
+}
+.hot-products .hot-products-part .pink{
+    background-color: #FF4081;
+}
+.hot-products .hot-products-part .grey{
+    background-color: #607D8B;
+}
+.hot-products .hot-products-part .orange{
+    background-color: #FF5722;
+}
+.hot-products .hot-products-part .hot-products-icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 /* Hot Selling Products Css End */
 

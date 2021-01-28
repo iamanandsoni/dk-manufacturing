@@ -3,6 +3,9 @@
     --yellow: #fcb215;
     --brown: #c13a22; 
 }
+body{
+    background-color: #fefaf3;
+}
 
 html,
 body, a, p, * {

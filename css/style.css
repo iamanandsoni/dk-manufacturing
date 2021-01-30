@@ -205,7 +205,6 @@ a:hover {
 }
 .hot-products a:hover .hot-products-part h5{
     color: var(--red);
-    text-align: center;
 }
 .hot-products .hot-products-part .hot-products-icon{
     height: 90px;
@@ -221,6 +220,10 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.hot-products .hot-products-part h5{
+    text-align: center;
+    font-size: 16px;
 }
 .hot-products .hot-products-part .blue{
     border: 2px solid #448AFF;
@@ -244,6 +247,14 @@ a:hover {
 }
 .hot-products .hot-products-part .orange{
     border: 2px solid #FF5722;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .purple{
+    border: 2px solid #800080;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .cyan{
+    border: 2px solid #00FFFF;
     background-color: #ffffff;
 }
 /* Hot Selling Products Css End */

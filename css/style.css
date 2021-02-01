@@ -107,9 +107,9 @@ a:hover {
 }
 
 #header .logo-tagline .playful span:nth-child(7n), #header .logo-tagline .playful span:nth-child(11n) {
-  color: #FF9C55;
+  color: #13aa52;
   /*text-shadow: 0.25px 6px #FF5555;*/
-  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #FF9C55;
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #13aa52;
   animation-delay: 0.25s;
 }
 

@@ -80,31 +80,36 @@ a:hover {
 #header .logo-tagline .playful span {
   position: relative;
   color: #5362F6;
-  text-shadow: textShadow(0.25, 6, #E485F8);
+  /*text-shadow: 0.25px 6px #E485F8;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #5362F6;
   animation: scatter 1.75s infinite;
 }
 
 #header .logo-tagline .playful span:nth-child(2n) {
   color: #ED625C;
-  text-shadow: textShadow(0.25, 6, #F2A063);
+  /*text-shadow: 0.25px 6px #F2A063;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #ED625C;
   animation-delay: 0.3s;
 }
 
 #header .logo-tagline .playful span:nth-child(3n) {
   color: #FFD913;
-  text-shadow: textShadow(0.25, 6, #6EC0A9);
+  /*text-shadow: 0.25px 6px #6EC0A9;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #FFD913;
   animation-delay: 0.15s;
 }
 
 #header .logo-tagline .playful span:nth-child(5n) {
   color: #555BFF;
-  text-shadow: textShadow(0.25, 6, #E485F8);
+  /*text-shadow: 0.25px 6px #E485F8;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #555BFF;
   animation-delay: 0.4s;
 }
 
 #header .logo-tagline .playful span:nth-child(7n), #header .logo-tagline .playful span:nth-child(11n) {
   color: #FF9C55;
-  text-shadow: textShadow(0.25, 6, #FF5555);
+  /*text-shadow: 0.25px 6px #FF5555;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #FF9C55;
   animation-delay: 0.25s;
 }
 
@@ -126,6 +131,7 @@ a:hover {
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0px;
+  letter-spacing: 1.3px;
 }
 /*#header .logo-tagline h2{
     font-size: 32px; 
